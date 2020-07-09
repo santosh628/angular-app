@@ -1,0 +1,29 @@
+<p>sensor-list works!</p>
+
+<table id="t01">
+	<tr>
+		<th>_id</th>
+		<th>DevAddr</th>
+		<th>DevEUI</th>
+		<th>Lat</th>
+		<th>Lng</th>
+		<th>Temp</th>
+		<th>Humidity</th>
+		<th>Flow</th>
+		<th>RFID</th>
+		<th>__v</th>
+		
+	</tr>
+	<tr *ngFor="let sensor of sensors">
+		<td>{{sensor._id}}</td>
+		<td>{{sensor.DevAddr}}</td>
+		<td>{{sensor.DevEUI}}</td>
+		<td>{{sensor.Lat}}</td>
+		<td>{{sensor.Lng}}</td>
+		<td>{{sensor.Temp}}</td>
+		<td>{{sensor.Humidity}}</td>
+		<td>{{sensor.Flow}}</td>
+		<td>{{sensor.RFID}}</td>
+		<td>{{sensor.__v}}</td>
+	</tr>
+</table>
